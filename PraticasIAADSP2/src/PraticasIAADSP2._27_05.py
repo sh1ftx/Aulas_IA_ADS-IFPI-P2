@@ -23,10 +23,12 @@ df.columns = ['Country', 'Region', 'rank_felicidade', 'score_felicidade',
 
 df['Country'] = df['Country'].astype('category')
 df['classes1'] = df['Country'].cat.codes
-print(df.info())
-print(df.head())
+# print(df.info())
+# print(df.head())
+
+# print(df['Region'].head(15))
 
 df['Region'] = df['Region'].astype('category')
 df['classes2'] = df['Region'].cat.codes
 print(df.info())
-print(df.head())
+print(df.head(15))
